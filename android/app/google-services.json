@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "795817453048",
+    "project_id": "lmg-task3",
+    "storage_bucket": "lmg-task3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795817453048:android:95d7afa1a63b08c147a20d",
+        "android_client_info": {
+          "package_name": "com.lmg.todo_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfACgSSci4nArdWlrOLTKOhGD_rIImqtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
