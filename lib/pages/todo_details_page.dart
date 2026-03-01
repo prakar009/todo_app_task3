@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../bloc/todo_bloc.dart';
-import '../bloc/todo_event.dart';
-import '../bloc/todo_state.dart';
+import '../bloc/todo/todo_bloc.dart';
+import '../bloc/todo/todo_event.dart';
+import '../bloc/todo/todo_state.dart';
 import '../models/todo_model.dart';
 
 class TodoDetailsPage extends StatelessWidget {

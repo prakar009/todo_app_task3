@@ -1,4 +1,4 @@
-import '../models/todo_model.dart';
+import '../../models/todo_model.dart';
 
 class TodoState {
   final List<Todo> allTodos;       

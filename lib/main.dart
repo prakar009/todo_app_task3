@@ -2,9 +2,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:todo_app/bloc/auth/auth_bloc.dart';
 import 'package:todo_app/services/notification_service.dart'; 
-import 'bloc/todo_bloc.dart';
-import 'bloc/todo_event.dart';
+import 'bloc/todo/todo_bloc.dart';
+import 'bloc/todo/todo_event.dart';
 import 'pages/todo_list_page.dart';
 import 'pages/login_page.dart'; 
 import 'package:firebase_auth/firebase_auth.dart';
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
+        BlocProvider(create: (_) => AuthBloc()),
         BlocProvider(
           create: (context) => TodoBloc()..add(LoadTodos()),
         ),
