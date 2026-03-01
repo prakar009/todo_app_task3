@@ -231,7 +231,6 @@ class _TodoListPageState extends State<TodoListPage> {
   String title = tCtrl.text.trim();
   String desc = dCtrl.text.trim();
 
-  // 1. Instant Snackbar Setup
   void showError(String msg) {
     ScaffoldMessenger.of(context).removeCurrentSnackBar();
     ScaffoldMessenger.of(context).showSnackBar(
@@ -246,7 +245,6 @@ class _TodoListPageState extends State<TodoListPage> {
     );
   }
 
-  // 2. Validations
   if (title.isEmpty) {
     showError("TITLE IS REQUIRED!");
     return;
@@ -267,7 +265,6 @@ class _TodoListPageState extends State<TodoListPage> {
     return;
   }
 
-  // 3. Success Logic
   final out = Todo(
     sqlId: isEdit ? model.sqlId : null,
     firebaseId: isEdit ? model.firebaseId : null,

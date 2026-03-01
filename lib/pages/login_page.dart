@@ -52,8 +52,6 @@ class _LoginPageState extends State<LoginPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-
-                  /// TOP ICON SAME
                   Container(
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
@@ -136,7 +134,7 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  /// INPUT SAME DESIGN
+ 
   Widget _inputField(
       TextEditingController controller,
       String hint,
@@ -175,7 +173,6 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  /// BUTTON SAME DESIGN (NOW BLOC CONTROLLED)
   Widget _submitButton() {
     return BlocBuilder<AuthBloc, AuthState>(
       builder: (context, state) {

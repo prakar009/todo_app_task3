@@ -18,8 +18,8 @@ class NotificationService {
     await _localNotifications.initialize(initSettings);
 
     const AndroidNotificationChannel channel = AndroidNotificationChannel(
-      'timer_channel', // ID
-      'Task Reminders', // Name
+      'timer_channel', 
+      'Task Reminders', 
       description: 'Notifications when your task timer finishes',
       importance: Importance.max,
       playSound: true,
