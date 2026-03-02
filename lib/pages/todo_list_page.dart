@@ -36,7 +36,7 @@ class _TodoListPageState extends State<TodoListPage> {
         title: const Text("LMG TODO  APP",
             style: TextStyle(letterSpacing: 2, fontWeight: FontWeight.w900, color: Colors.white70, fontSize: 18)),
         actions: [
-          Center(child: Text(FirebaseAuth.instance.currentUser?.email ?? "", style: const TextStyle(color: Colors.white24, fontSize: 11))),
+          Center(child: Text(FirebaseAuth.instance.currentUser?.email ?? "", style: const TextStyle(color: Colors.white, fontSize: 11))),
           IconButton(
             icon: const Icon(Icons.logout_rounded, color: Colors.redAccent, size: 20),
             onPressed: () async {
